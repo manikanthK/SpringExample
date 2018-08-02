@@ -1,10 +1,20 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://www.springframework.org/schema/beans
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
 	<bean id="helloBean" class="com.spring.common.HelloWorld">
 		<property name="name" value="manikanth" />
+		<property name="or" ref="order"></property>
+
 	</bean>
-	
+	<bean id="order" class="com.spring.common.Order">
+		<property name="num" value="10"></property>
+		<property name="name" value="Ravi"></property>
+	</bean>
+
+
+
+
+
 </beans>
