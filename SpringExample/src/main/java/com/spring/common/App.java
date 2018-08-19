@@ -14,7 +14,8 @@ public class App
     	ApplicationContext context = new ClassPathXmlApplicationContext("Spring-Module.xml");
     	 
         HelloWorld obj = (HelloWorld) context.getBean("helloBean");
-        obj.setName("kanth");
+        obj.getName();
+        System.out.println(obj.getName());
         obj.printHello();
         
     }

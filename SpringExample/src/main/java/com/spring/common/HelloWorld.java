@@ -1,5 +1,7 @@
 package com.spring.common;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 /**
  * Hello world!
  *
@@ -14,7 +16,7 @@ public class HelloWorld
 		return or;
 	}
 
-
+	@Autowired
 	public void setOr(Order or) {
 		this.or = or;
 	}
@@ -37,6 +39,7 @@ public class HelloWorld
 	}
 	
 	public void printHello() {
+		or.check();
 		System.out.println("Hello ! " + name+" Order ID :"+ or.toString());
 	}
 

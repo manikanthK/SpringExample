@@ -6,7 +6,7 @@ public class Order {
 	
 	 
 	private int num;
-	@Override
+	 
 	public String toString() {
 		return "Order [num=" + num + ", name=" + name + "]";
 	}
@@ -23,6 +23,10 @@ public class Order {
 		this.name = name;
 	}
 	private String name;
+	public void check()
+	{
+		System.out.println("inside the Order class");
+	}
 		
 
 }
